@@ -1,0 +1,42 @@
+.bottom-menu {
+  position: fixed;
+  height: 56px;
+  border-radius: 20px 20px 0 0;
+  border: 2px solid #f4f6f5;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 25;
+}
+.bottom-menu .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.bottom-menu .content .sideItem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  padding: 4px;
+}
+.bottom-menu .content .sideItem span {
+  width: 100%;
+  line-height: 20px;
+  font-size: 10px;
+  text-align: center;
+}
+.bottom-menu .content .middleItem {
+  display: block;
+  align-items: center;
+  width: 30%;
+  position: relative;
+}
+.bottom-menu .content .middleItem svg {
+  position: absolute;
+  width: 70px;
+  padding-left: 17%;
+  top: -20px;
+}

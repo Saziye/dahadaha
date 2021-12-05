@@ -1,0 +1,94 @@
+body {
+  align-items: center;
+  background-color: #f4f6f5;
+}
+.promotion {
+  position: absolute;
+  left: 0%;
+  right: 0;
+  top: 0;
+  bottom: 5.48%;
+  background-color: #ffff;
+}
+.promotion .logo {
+  width: 100%;
+  height: auto;
+  position: relative;
+  border-bottom-left-radius: 100px;
+}
+.promotion svg {
+    display: none;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  border-radius: 50%;
+  padding: 2px;
+  z-index: 5;
+}
+.promotion .brand-logo {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  padding: 2px;
+}
+.promotion .text {
+  justify-content: center;
+  display: block;
+  text-align: center;
+  padding:10px;
+  
+}
+.hemen {
+  margin: auto;
+  height: 56px;
+  border-radius: 28px;
+  background-color: #f40000;
+  color:white  !important;
+  line-height: 56px;
+}
+@media screen and (max-width: 799px) {
+    .promotion svg{
+        display: block;
+      }
+}
+@media screen and (min-width: 800px) {
+  /* STYLES HERE */
+  .promotion {
+    display: flex;
+    width: 750px;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: space-between;
+    border: 2px solid #f4f6f5;
+    border-radius: 20px;
+  }
+  .promotion .logo {
+    width: 360px;
+    height: 360px;
+    border-radius: 16px;
+
+    margin: auto;
+  }
+  .promotion .text {
+    width: 350px;
+    height: 100%;
+    position: relative;
+  }
+  .promotion .text .description{
+display: block;
+min-height: 60%;
+    max-height: calc(100% - 160px);
+    overflow-y: auto;
+  }
+  .hemen{
+      position: absolute;
+      left: 15px;
+      right:15px;
+      bottom: 58px;
+  }
+}
